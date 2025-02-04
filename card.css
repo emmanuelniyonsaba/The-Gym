@@ -1,0 +1,55 @@
+img{
+    width: 300px;
+}.ff1{
+    width: 550px;
+    height:fit-content;
+    background-color: rgb(59, 58, 58);
+    border: none;
+    border-radius: 10px;
+}.ff2{
+    width: 350px;
+    height: fit-content;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    border: none;
+}.emm1{
+    color: white;
+}.fff1{
+    color: rgb(249, 189, 115);
+}.eweb{
+    color: white;
+    font-size: small;
+}.btn{
+    width: 150px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}.btn2{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: 
+    blue;
+    border-radius: 15px;
+}.hh1{
+    color: white;
+}.pp1{
+    color: white;
+    font-size: small;
+}.hh2{
+    color: white;
+
+}.pp2{
+    color: white;
+    font-size: small;
+}
+footer{
+    background-color: black;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+}.fpp1{
+    color: white;
+    font-size: small;
+}

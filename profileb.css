@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(221, 215, 207);
+}.ff1{
+    background-color: white;
+    border: none;
+    width: 350px;
+    height: fit-content;
+    
+}.hh1{
+    text-align: left;
+}ul li a{
+text-decoration: none;
+color: black;
+margin-left: 60px;
+align-content: center;
+}

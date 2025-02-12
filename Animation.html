@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+          #back{
+            width: 500px;
+            height: 800px;
+            position: relative;
+            background-color: aqua;
+          }#animation{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: rgb(11, 255, 101);
+          }
+    </style>
+    
+    <title>Document</title>
+
+</head>
+<body>
+    <button onclick="myfunction()">click me!!</button>
+    <div id="back">
+        <div id="animation">
+<h1>hhhh</h1>
+        </div>
+    </div>
+    
+    <script>
+function myfunction(){
+    let element = document.getElementById("animation");
+    let second = null;
+     let position = 0;
+     clearInterval(second);
+    second = setInterval( x , 5);
+
+function x(){
+    if(position == 400){
+        clearInterval(second);
+    }else{
+        position++
+        element.style.top = position+"px"
+        element.style.left = position+"px"
+    }
+}
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>js DOM about addeventlistener</h1>
+    <button id="click1">click here</button>
+    <p id="ppp1"></p>
+    <h1>to remove th some values</h1>
+    <p id="tobe">remove this pargraph</p>
+    <button onclick="fff()">remove p</button>
+<script>
+    // document.getElementById("click1").addEventListener(click,mmm)
+    // function (){
+    //     document.getElementById("ppp1").innerHTML = "Now addeventlistener is working well ";
+    // }
+    let y = document.getElementById("click1");
+    y.addEventListener('click',mmm)
+    function mmm (){
+        document.getElementById("ppp1").innerHTML="now we can how eventListener works";
+    }dom
+    let emmy = document.createElement("pp");
+    let emmyson = document.createTextNode("This about creating the new node")
+    emmy.appendChild(emmyson)
+    let emmanuel = document.getElementById("div1")
+    emmanuel.appendChild(emmy)
+    function fff(){
+        document.getElementById("tobe").remove();
+    }
+</script>
+</body>
+</html>

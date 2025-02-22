@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>to do list</h1>
+    <form action="" onsubmit="myfunction(event)">
+        <input id="input" on type="text" placeholder="Enter your Names">
+        <button id="button">ADD</button>
+    </form>
+    <ol id="list"></ol>
+    <p id="paragraph"></p>
+    <script>
+        function myfunction(event){
+            event.preventDefault()
+            let a=document.getElementById("input");
+            let b=document.getElementById("list");
+         let c =document.createElement("li");
+         c.textContent=a.value;
+         b.appendChild(c);
+let d= document.createElement("button");
+d.textContent="Remove";
+b.appendChild(d);
+d.addEventListener('click',()=>{
+    b.removeChild(c);
+    b.removeChild(d);
+})
+
+        }
+        // function handleInput(){
+        //     let a=document.getElementById("input");
+        //     let b = document.getElementById("paragraph")
+        //     b.textContent =a.value
+        // }
+
+    </script>
+</body>
+</html>

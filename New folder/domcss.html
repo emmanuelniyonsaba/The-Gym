@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- unorderedlist -->
+  <h1>unordered list css with DOM</h1>
+  <ul id="nameslist">
+    <li>Emmanuel Niyonsaba</li>
+    <li>Oliovier Ndihokubwayo</li>
+  </ul> 
+
+  <!-- the buttons section -->
+  <button id="greenbutton" onclick="mygreen()">green text</button>
+
+  <button id="bluebutton" onclick="myblue()">blue text</button>
+
+  <button onclick="newp()">try it</button>
+
+  <!-- the form section -->
+  <form action="">
+    <input id="input" type="text" placeholder="Enter names"><br><br>
+
+     <!-- the new pargarph frim the value of the form -->
+
+    <p id="newp"></p>
+
+  </form>
+  
+  <script>
+let gg =document.getElementById("greenbutton");
+let bb =document.getElementById("bluebutton");
+gg.style.backgroundColor="green";
+gg.style.borderRadius="15px"
+bb.style.backgroundColor="blue";
+bb.style.borderRadius="15px"
+// css for li
+function mygreen(){
+    document.getElementById("nameslist").style.color="green";
+}
+function myblue(){
+    document.getElementById("nameslist").style.color="blue";
+}
+
+        let hh= document.getElementById("newp");
+        let tt= document.getElementById("input");
+
+        function newp(){
+            hh.innerHTML=tt.nodeValue;
+        }
+
+  </script>
+</body>
+</html>

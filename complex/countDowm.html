@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>about countDowm</h1>
+    <input id="input" type="number">
+    <button id="button">Start</button>
+    <p id="countarea"></p>
+    <audio autoplay id="audio" >
+       
+    </audio>
+    
+    <script>
+       let a=document.getElementById("button");
+       a.addEventListener("click",()=>{
+        let b = document.getElementById("input");
+        let c = document.getElementById("countarea");
+        c.textContent=b.value;
+
+        let seconds = Number(b.value);
+
+        let interval = null;
+
+        interval = setInterval(countDown,1000)
+
+        function countDown(){
+            if(seconds ==0){
+                clearInterval(interval)
+                
+                document.getElementById("audio").setAttribute("src", "audio.mp3")
+                alert("enjoy")
+            }else{
+            seconds -=1
+            c.textContent = seconds
+            }
+        }
+
+       }) 
+    </script>
+</body>
+</html>

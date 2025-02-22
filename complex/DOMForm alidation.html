@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .added{
+        background-color: purple;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-family: cursive;
+        font-size: 20px;
+      }
+    </style>
+</head>
+<body>
+    <h1 onmouseover="this.innerHTML='Ntubibona se mn'" >Form Validation By JS DOM</h1>
+    <p>Please Enter the Number from 1 to 10</p>
+    <form action="" method="post" onsubmit="return myFunction()" >
+      <input type="number" id="numb" name="num1" class="test" >
+
+      <button type="submit">submit</button>
+    </form>
+
+
+
+     <div id="added"></div>
+
+
+    <p id="p" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsum.</p>
+    <button type="submit" id="eee1" onclick="emmy1()">see date from here</button>
+    <p id="demo1"></p>
+    <script>
+      function emmy1(){
+        document.getElementById("demo1").innerHTML = Date();
+        document.getElementById("eee1").style.color ="blue"
+        document.getElementById("eee1").style.backgroundColor ="white"
+      }
+      document.getElementById("numb").style.padding="10px"
+      document.getElementById("numb").style.backgroundColor="red"
+      function mousing(){
+           
+         const newElement = document.createElement("div")
+         newElement.innerHTML="<h2>Welcome To site name</h2>"
+         newElement.classList.add("added")
+         document.getElementById("added").appendChild(newElement)
+      }
+      function mousingLeave(){
+        document.getElementById("added").innerHTML=""
+      }
+      document.getElementById("p").addEventListener("mouseover",mousing)
+      document.getElementById("p").addEventListener("mouseleave",mousingLeave)
+      // document.getElementById("p").addEventListener("mouseover",()=>{
+      //   alert("fhfhf")
+      // })
+
+        function myFunction() {
+              // Get the value of the input field with id="numb"
+              let x = document.getElementById("numb").value;
+            
+    
+              if(x > 100){
+                alert("bigger than 100")
+                return false
+              }
+              else{
+                alert("redirect to saving")
+                return true
+              }
+             
+             
+        }
+    </script>
+
+</body>
+</html>

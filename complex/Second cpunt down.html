@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>the second count down</h1> 
+   <input type="number" id="input"> 
+   <button id="button11">Start</button>
+   <p id="para"></p>
+   <script>
+       let a =document.getElementById("button11")
+       a.addEventListener("click",()=>{
+        let b=document.getElementById("input");
+        let c=document.getElementById("para");
+        c.textContent=b.value;
+        let d= b.value;
+        let interval =null
+        interval =setInterval(emmy, 1000)
+        function emmy(){
+            if(d == 0){
+                clearInterval(interval)
+                alert("time seten alive now2")
+            }else{
+                d-=1
+                c.textContent=d
+            }
+        }
+        
+       })
+
+   </script>
+</body>
+</html>

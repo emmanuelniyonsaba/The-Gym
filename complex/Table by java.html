@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>To make a table  by js and html </h1>
+   <!-- frist cearting the table and the button allow use to start creating table -->
+   <table id="table11" border="1"></table> 
+  <button id="table11" onclick="myfunction()">Create the table</button>
+
+<!-- Next step 
+starting js by defining the fumctinon from button -->
+<script>
+function myfunction(){
+    rn =window.prompt("enter number of rows",1);
+    cn=window.prompt("enter number of columns",1);
+    for(let r=0 ;r<parseInt(rn,10);r++){
+        let x=document.getElementById("table11").insertRow(r);
+    
+        for(let c=0;c<parseInt(cn,10);c++){
+        let y = x.insertCell(c);
+        y.innerHTML ="row"+r+"column"+c;
+            
+        }
+    }
+    }
+
+</script>
+</body>
+</html>

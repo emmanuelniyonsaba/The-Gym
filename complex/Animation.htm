@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #conteiner{
+            width: 50px;
+            height: 60px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+  <h1>Animation </h1>
+  <button id="button11"> tyr it</button>
+  <div id="conteiner"></div>
+  <input type="textarea" placeholder="type any thing here" id="innn">
+  <p id="pp1"></p>
+  <script>
+    let a=document.getElementById("button11");
+    
+    a.addEventListener("click",myfunction);
+    function myfunction(){
+        let b=document.getElementById("container");
+        let second=null;
+        let position =0;
+        clearInterval(second)
+        second=clearInterval(x,1000)
+        function x(){
+            if(position==300){
+                clearInterval(second)
+            }else{
+                b.style.padding-Left++
+            }
+        }
+    }
+  
+  </script>
+</body>
+</html>
